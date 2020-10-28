@@ -65,8 +65,10 @@ app.layout = html.Div(children=[
              style={'width': '50%', 'float': 'left'}),
     html.Div(children=[dcc.Graph(id='fig3',figure=fig3)],
              style={'marginLeft': '50%'}),
-    dcc.Graph(id='fig2'),
-    dcc.Graph(id='fig4')
+    html.Div(children=[dcc.Graph(id='fig2',figure=fig)],
+             style={'width': '50%', 'float': 'left'}),
+    html.Div(children=[dcc.Graph(id='fig4',figure=fig3)],
+             style={'marginLeft': '50%'}),
     ]
 )
 
